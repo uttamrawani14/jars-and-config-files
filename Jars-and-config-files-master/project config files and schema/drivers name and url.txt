@@ -1,0 +1,26 @@
+for Oracle 10G
+driver Class name - > oracle.jdbc.driver.OracleDriver
+
+driver url -> jdbc:oracle:thin:@localhost:1521:xe
+	(1521 is the port no and xe is the orcale service name)
+#if getting exception then in orcale folder in c driver look for
+# tnsnames.ora file and then lo for -> (SERVICE_NAME = ? )
+
+pse the ? found in tnsnames.ora in the url 
+driver url -> jdbc:oracle:thin:@localhost:1521:?
+	(1521 is the port no and xe is the orcale service name) 
+
+
+----------------------------------------------------
+for Mysql
+driver Class name - > com.mysql.jdbc.Drive
+driver url -> jdbc:mysql://localhost:3306/db_name
+	( 3306 is the port no for mysql and db_name is the dataBase name)
+
+----------------------------------------------------
+for MongoDb
+driver Class name - > mongodb.jdbc.MongoDrive
+driver url -> jdbc:mongo://serverIP:port/db_name
+	
+	
+	
